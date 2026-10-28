@@ -1,0 +1,34 @@
+.category {
+  width: 100%;
+  min-height: 60px;
+  height: auto;
+  padding: 8px 0;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  box-sizing: border-box;
+
+  .box {
+    border: 1px solid #E0E0E2;
+    border-radius: 100px;
+    padding: 8px 12px;
+    box-sizing: border-box;
+
+    a {
+      display: block;
+      width: fit-content;
+      height: auto;
+      font-family: var(--font-family);
+      font-size: 14px;
+      font-weight: 700;
+      color: #3F4064;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+  }
+}

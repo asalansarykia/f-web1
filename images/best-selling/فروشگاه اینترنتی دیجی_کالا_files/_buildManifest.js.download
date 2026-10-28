@@ -1,0 +1,891 @@
+self.__BUILD_MANIFEST = {
+  "/": [
+    "static/chunks/251brw04arh7v.js"
+  ],
+  "/404": [
+    "static/chunks/3-6-4v-k7m1n3.js"
+  ],
+  "/500": [
+    "static/chunks/1n-hoxo60zvq6.js"
+  ],
+  "/[brandCode]/[categoryCode]": [
+    "static/chunks/3d12hk-2ql9rk.js"
+  ],
+  "/_error": [
+    "static/chunks/3fxcc6jthkyi1.js"
+  ],
+  "/all-brands": [
+    "static/chunks/14_ghyvejjx4j.js"
+  ],
+  "/all-categories": [
+    "static/chunks/1adjr0wny16p6.js"
+  ],
+  "/assistant": [
+    "static/chunks/20cn4k3n7kmh4.js"
+  ],
+  "/best-selling": [
+    "static/chunks/3cewnbh1dybmx.js"
+  ],
+  "/brand-landing/[brandCode]": [
+    "static/chunks/18jnpzwhw92wq.js"
+  ],
+  "/brand/[brandCode]": [
+    "static/chunks/2ofhkfns6mhpo.js"
+  ],
+  "/categories": [
+    "static/chunks/0qejje-g3w7y1.js"
+  ],
+  "/chat-room": [
+    "static/chunks/12-kdc36vl6d7.js"
+  ],
+  "/checkout/add-item": [
+    "static/chunks/0pxy77kfvbqti.js"
+  ],
+  "/checkout/cart": [
+    "static/chunks/3_e6_j2e1nz4q.js"
+  ],
+  "/checkout/instant/[[...data]]": [
+    "static/chunks/2ka30wocymu7_.js"
+  ],
+  "/checkout/payment/[[...data]]": [
+    "static/chunks/1an88z2ll-zjn.js"
+  ],
+  "/checkout/shipping": [
+    "static/chunks/2bmb57ju8zppd.js"
+  ],
+  "/checkout/thank-you/[type]/[...data]": [
+    "static/chunks/2r0pvu37otsuh.js"
+  ],
+  "/cheque/[[...slug]]": [
+    "static/chunks/28e_b76uo6358.js"
+  ],
+  "/compare/[...productIds]": [
+    "static/chunks/2kqz_5e1fpsr6.js"
+  ],
+  "/coupon/[[...slug]]": [
+    "static/chunks/2_vinb1gv1gh7.js"
+  ],
+  "/digiclub": [
+    "static/chunks/0zzpu5xgpwqki.js"
+  ],
+  "/digiclub/auction": [
+    "static/chunks/2x0dqntz9solg.js"
+  ],
+  "/digiclub/authorize": [
+    "static/chunks/2cgtrbxuwq8wb.js"
+  ],
+  "/digiclub/game-center/digipoly": [
+    "static/chunks/3khzzele2q-1m.js"
+  ],
+  "/digiclub/game-center/seedling-hope": [
+    "static/chunks/2-ejosuo04aq6.js"
+  ],
+  "/digiclub/gamenet": [
+    "static/chunks/3kta0m-g2frgx.js"
+  ],
+  "/digiclub/history": [
+    "static/chunks/24qu-7j2jzq57.js"
+  ],
+  "/digiclub/history/claimed": [
+    "static/chunks/42737sfsv3iat.js"
+  ],
+  "/digiclub/history/expired": [
+    "static/chunks/0zn-6rup-k4em.js"
+  ],
+  "/digiclub/history/pending": [
+    "static/chunks/3vwqnqdgejv6h.js"
+  ],
+  "/digiclub/history/ready-to-claim": [
+    "static/chunks/1csp3nz7ptbfi.js"
+  ],
+  "/digiclub/history/used": [
+    "static/chunks/305w4o6v5dbaw.js"
+  ],
+  "/digiclub/lucky-spinner": [
+    "static/chunks/3ijdflhrclew5.js"
+  ],
+  "/digiclub/luckydraw": [
+    "static/chunks/1w88xr247u123.js"
+  ],
+  "/digiclub/missions": [
+    "static/chunks/13eh67r4s1q4y.js"
+  ],
+  "/digiclub/redirect/[...redirectId]": [
+    "static/chunks/1dbvzm2nfh4ea.js"
+  ],
+  "/digiclub/rewards": [
+    "static/chunks/1r8lr57q59ka9.js"
+  ],
+  "/digiclub/vote-to-win/[id]": [
+    "static/chunks/2a-ca7y-0h6j_.js"
+  ],
+  "/duck": [
+    "static/chunks/2mirpfywu-4sj.js"
+  ],
+  "/early-access-fresh": [
+    "static/chunks/3_n97nfqb-x-h.js"
+  ],
+  "/early-access-offers": [
+    "static/chunks/12my4nx4724l4.js"
+  ],
+  "/emergency-test": [
+    "static/chunks/087kalnqae142.js"
+  ],
+  "/faq": [
+    "static/chunks/314599hwcpt9n.js"
+  ],
+  "/faq/category/[categoryId]": [
+    "static/chunks/1f_w-dcmgvyzs.js"
+  ],
+  "/faq/question/[questionId]": [
+    "static/chunks/3niqkq9fvc-7o.js"
+  ],
+  "/foryou/games/5secondsrush": [
+    "static/chunks/0pc-u54qoi6r9.js"
+  ],
+  "/fresh-offers": [
+    "static/chunks/2k8rtkz82faod.js"
+  ],
+  "/grid-picture/[imageId]": [
+    "static/chunks/3t2s9_qfid1-v.js"
+  ],
+  "/hot-discount": [
+    "static/chunks/20_jdrxr1ql_2.js"
+  ],
+  "/incredible-offers": [
+    "static/chunks/1mexgxjsojto_.js"
+  ],
+  "/incredible-offers-teasing": [
+    "static/chunks/2hcmlrcmzbgq6.js"
+  ],
+  "/landing-page": [
+    "static/chunks/18ack94o0t5tz.js"
+  ],
+  "/landing-v2/[id]": [
+    "static/chunks/2oyyx1kw62g9n.js"
+  ],
+  "/landing/[id]": [
+    "static/chunks/2tzu2bp8hsca6.js"
+  ],
+  "/landing/ad-amazing": [
+    "static/chunks/3hkesxwehc7a-.js"
+  ],
+  "/landing/amazing-election": [
+    "static/chunks/1u62osl_y9j89.js"
+  ],
+  "/landing/back-to-school-1401": [
+    "static/chunks/08ldguo-zy52-.js"
+  ],
+  "/landing/black-friday-1401": [
+    "static/chunks/1nu69qr1rm4mj.js"
+  ],
+  "/landing/book-fair-1401": [
+    "static/chunks/10tqis926ebpq.js"
+  ],
+  "/landing/book-fair-1402": [
+    "static/chunks/12z5211dsh0e0.js"
+  ],
+  "/landing/corporate-gift-cards": [
+    "static/chunks/1j0a-6-kbc2zg.js"
+  ],
+  "/landing/henkel": [
+    "static/chunks/191fa9wsd_qs3.js"
+  ],
+  "/landing/khanetekani": [
+    "static/chunks/3pfn055c2qzkc.js"
+  ],
+  "/landing/new-year-1402": [
+    "static/chunks/1gxjd9g74hq3u.js"
+  ],
+  "/landing/sellers-promotion": [
+    "static/chunks/38853iz572c-q.js"
+  ],
+  "/landing/stock-clearance": [
+    "static/chunks/00hoe1ydmq-bn.js"
+  ],
+  "/landing/treasure-hunt": [
+    "static/chunks/1nawd9aw_wlik.js"
+  ],
+  "/landing/un": [
+    "static/chunks/0b6vw29qtzqbg.js"
+  ],
+  "/landing/voucher-catcher/[id]": [
+    "static/chunks/26w66f79oxyna.js"
+  ],
+  "/landing/worldcup-2022": [
+    "static/chunks/1a78ke28zp_7z.js"
+  ],
+  "/landing/x-vision": [
+    "static/chunks/07nbg_dpkc7bz.js"
+  ],
+  "/landings/business-registration": [
+    "static/chunks/3uuv7zkcvlqx7.js"
+  ],
+  "/landings/father-day": [
+    "static/chunks/3fqdq2z2w2zcg.js"
+  ],
+  "/landings/magnet": [
+    "static/chunks/17-tfvd72520d.js"
+  ],
+  "/landings/mahekamel": [
+    "static/chunks/3tmgkr4maha_b.js"
+  ],
+  "/landings/new-app": [
+    "static/chunks/3-0jnpe5b417j.js"
+  ],
+  "/landings/seller-introduction": [
+    "static/chunks/34exkm1iwy70l.js"
+  ],
+  "/landings/unsatisfied/[id]": [
+    "static/chunks/36gpd9yqb9isd.js"
+  ],
+  "/landings/user-history": [
+    "static/chunks/3t54o9nxhaxy4.js"
+  ],
+  "/landings/village-businesses": [
+    "static/chunks/0c-9pl5g3neit.js"
+  ],
+  "/live": [
+    "static/chunks/1w3g6ybgz5jac.js"
+  ],
+  "/magnet-profile/seller-verification": [
+    "static/chunks/3c74sd13n6aff.js"
+  ],
+  "/magnet/activation": [
+    "static/chunks/3nc3mkoejd-56.js"
+  ],
+  "/magnet/community/c/[communityId]": [
+    "static/chunks/408jxywlq11t6.js"
+  ],
+  "/magnet/community/c/[communityId]/search": [
+    "static/chunks/21orv83bnmy44.js"
+  ],
+  "/magnet/community/create-question": [
+    "static/chunks/0un9bfoef7okl.js"
+  ],
+  "/magnet/community/question/[questionId]": [
+    "static/chunks/3lc-ebnbnly94.js"
+  ],
+  "/magnet/community/search": [
+    "static/chunks/0by2pec8-3qvu.js"
+  ],
+  "/magnet/feed": [
+    "static/chunks/2244_yeiknxro.js"
+  ],
+  "/magnet/following-followers/[username]": [
+    "static/chunks/0i03ysp1jp976.js"
+  ],
+  "/magnet/live/[liveId]": [
+    "static/chunks/0p34oozw211y-.js"
+  ],
+  "/magnet/posts/[postId]": [
+    "static/chunks/1qrzd526b28ho.js"
+  ],
+  "/magnet/profile": [
+    "static/chunks/05l5l97gvoo_0.js"
+  ],
+  "/magnet/profile/edit": [
+    "static/chunks/0tjil0g57oiu8.js"
+  ],
+  "/magnet/tab": [
+    "static/chunks/3d8-zx91dgybk.js"
+  ],
+  "/magnet/users/[username]": [
+    "static/chunks/13sh1m652wm1v.js"
+  ],
+  "/main/[categoryCode]": [
+    "static/chunks/1-6n_pgyzanxj.js"
+  ],
+  "/main/dk-ds-gift-card": [
+    "static/chunks/3_txi-hhi-k1-.js"
+  ],
+  "/my-digipay": [
+    "static/chunks/1bbuzr1vpdhq6.js"
+  ],
+  "/nps": [
+    "static/chunks/00yyk8j8pl3o_.js"
+  ],
+  "/nps/[...data]": [
+    "static/chunks/2q3izhc_q01bb.js"
+  ],
+  "/org-exclusive": [
+    "static/chunks/2hiu1l1aqlu02.js"
+  ],
+  "/org-exclusive/checkout/cart": [
+    "static/chunks/2wdp15hwswglz.js"
+  ],
+  "/org-exclusive/checkout/payment/[[...data]]": [
+    "static/chunks/3fgwha3b9oqj4.js"
+  ],
+  "/org-exclusive/checkout/shipping": [
+    "static/chunks/2ic-j5s3esh3s.js"
+  ],
+  "/org-exclusive/checkout/thank-you/[type]/[...data]": [
+    "static/chunks/3nedy849u8i8y.js"
+  ],
+  "/org-exclusive/product-list/[plpCode]": [
+    "static/chunks/2wa3fi32p67xw.js"
+  ],
+  "/org-exclusive/product/[...productParams]": [
+    "static/chunks/024qdktdou2lh.js"
+  ],
+  "/org-exclusive/search": [
+    "static/chunks/388dq14yctkoe.js"
+  ],
+  "/org-exclusive/search/[categoryCode]": [
+    "static/chunks/22fxubj8yf9lv.js"
+  ],
+  "/page/bug-report": [
+    "static/chunks/3x817uuiy_gqz.js"
+  ],
+  "/page/comments-rules": [
+    "static/chunks/02-pdqcpx1swo.js"
+  ],
+  "/page/contact-us": [
+    "static/chunks/25lcfp-uu_02a.js"
+  ],
+  "/page/irancell-terms-and-conditions": [
+    "static/chunks/3rk5qwca-bwfx.js"
+  ],
+  "/page/privacy": [
+    "static/chunks/3hmd3cr8wrifw.js"
+  ],
+  "/page/terms": [
+    "static/chunks/16-xqsav49pk0.js"
+  ],
+  "/personalized-category/[categoryType]": [
+    "static/chunks/3rq0u0b91924h.js"
+  ],
+  "/plus/landing": [
+    "static/chunks/1j4jvh9p8fz2_.js"
+  ],
+  "/plus/landing/faqs": [
+    "static/chunks/1t4svt0sbcaed.js"
+  ],
+  "/plus/products": [
+    "static/chunks/0nazkel82prk3.js"
+  ],
+  "/premium-brand/[brandCode]": [
+    "static/chunks/2qe105h_uvlse.js"
+  ],
+  "/premium-brand/[brandCode]/[categoryCode]": [
+    "static/chunks/2nlophpiy7jka.js"
+  ],
+  "/product-list/[plpCode]": [
+    "static/chunks/0-risy4za6flm.js"
+  ],
+  "/product-price-chart/[productId]": [
+    "static/chunks/2qh-7jitdupim.js"
+  ],
+  "/product/[...productParams]": [
+    "static/chunks/2arc8o8y-8hfe.js"
+  ],
+  "/product/comment/[...commentParams]": [
+    "static/chunks/2ynn-7p_lb7cu.js"
+  ],
+  "/product/questions/[productId]": [
+    "static/chunks/2tm7dezzshy-s.js"
+  ],
+  "/profile": [
+    "static/chunks/3bnrqdrgdvd0e.js"
+  ],
+  "/profile/addresses": [
+    "static/chunks/0sid5y3cbsrq8.js"
+  ],
+  "/profile/chat-bot": [
+    "static/chunks/1ayqa7qv334r7.js"
+  ],
+  "/profile/comments": [
+    "static/chunks/1v_dntv4hh-0q.js"
+  ],
+  "/profile/complete-information": [
+    "static/chunks/2lajfk0q7xgns.js"
+  ],
+  "/profile/digiplus": [
+    "static/chunks/3-uf9xd78z2e2.js"
+  ],
+  "/profile/digiplus/orders": [
+    "static/chunks/3x1pa7x-kniz-.js"
+  ],
+  "/profile/digiplus/subscriptions": [
+    "static/chunks/0l6a3ypnek-k1.js"
+  ],
+  "/profile/gift-cards": [
+    "static/chunks/27m_7iuw4v6z6.js"
+  ],
+  "/profile/gift-cards/[id]": [
+    "static/chunks/0kuzh-f2971c5.js"
+  ],
+  "/profile/giftcard-not-found": [
+    "static/chunks/3aev34bsz1btz.js"
+  ],
+  "/profile/lists": [
+    "static/chunks/1kk-vbmvh1z-i.js"
+  ],
+  "/profile/merge": [
+    "static/chunks/1ym4l8lxp434q.js"
+  ],
+  "/profile/notification": [
+    "static/chunks/01zh9qz3oerzy.js"
+  ],
+  "/profile/orders": [
+    "static/chunks/2k11fp4s5kqe5.js"
+  ],
+  "/profile/orders/[id]": [
+    "static/chunks/022c7a0w9zxat.js"
+  ],
+  "/profile/orders/cancel/[...shipmentId]": [
+    "static/chunks/202mudwf1xc-0.js"
+  ],
+  "/profile/orders/cancel/online-modification/[...onlineModificationId]": [
+    "static/chunks/1rxj1h_16un-h.js"
+  ],
+  "/profile/orders/cancel/thank-you/[...onlineModificationId]": [
+    "static/chunks/3xwjjws_ycqvr.js"
+  ],
+  "/profile/orders/invoice/[type]/[...data]": [
+    "static/chunks/29slo-2jp92pn.js"
+  ],
+  "/profile/orders/modify-shipment/[...orderId]": [
+    "static/chunks/178rn79lrsqzh.js"
+  ],
+  "/profile/orders/refunds": [
+    "static/chunks/39kr0ht2l2b7f.js"
+  ],
+  "/profile/orders/return/[id]": [
+    "static/chunks/25b9bs7mltm-6.js"
+  ],
+  "/profile/orders/return/overview/[returnId]": [
+    "static/chunks/07274mx843t37.js"
+  ],
+  "/profile/orders/return/reasons/[returnId]": [
+    "static/chunks/2aj5lbu5bk_8u.js"
+  ],
+  "/profile/orders/return/select-items/[orderId]": [
+    "static/chunks/3tc7evatf6th1.js"
+  ],
+  "/profile/orders/return/thank-you/[returnId]": [
+    "static/chunks/0ij3a67uy_jsa.js"
+  ],
+  "/profile/personal-info": [
+    "static/chunks/3xvy45pco3yq_.js"
+  ],
+  "/profile/phone/confirm": [
+    "static/chunks/10hrfhpfe2-z2.js"
+  ],
+  "/profile/user-history": [
+    "static/chunks/2yqpt22s-hg_6.js"
+  ],
+  "/profile/wishlist/[wishListCode]/details": [
+    "static/chunks/16ezcxg-i7gkm.js"
+  ],
+  "/promotion-center": [
+    "static/chunks/1rxgj_9g-d7gf.js"
+  ],
+  "/promotion-page/[promotionCode]": [
+    "static/chunks/24gmq6ehs890-.js"
+  ],
+  "/promotion-search/personalized": [
+    "static/chunks/04xt5ya1tqbam.js"
+  ],
+  "/referral": [
+    "static/chunks/15ehlyc6stk13.js"
+  ],
+  "/routing": [
+    "static/chunks/0lsrppclz-hoh.js"
+  ],
+  "/s/[code]": [
+    "static/chunks/3segzb44xagwl.js"
+  ],
+  "/search": [
+    "static/chunks/1lfggwxp3pqn5.js"
+  ],
+  "/search/[categoryCode]": [
+    "static/chunks/0-1pb-y8xpfab.js"
+  ],
+  "/search/[categoryCode]/[brandCode]": [
+    "static/chunks/1ee4veqi894rp.js"
+  ],
+  "/search/[categoryCode]/product-list": [
+    "static/chunks/35emb5okjcsbm.js"
+  ],
+  "/search/ai": [
+    "static/chunks/2q8g45fmlgrd2.js"
+  ],
+  "/search/facet/[...facetURL]": [
+    "static/chunks/25pn9rft2ece-.js"
+  ],
+  "/search/image-search": [
+    "static/chunks/1amm3tft8v9kp.js"
+  ],
+  "/seller/[sellerCode]": [
+    "static/chunks/28yhw8d5us_dp.js"
+  ],
+  "/seller/pro/[slug]": [
+    "static/chunks/0x-kf653309u0.js"
+  ],
+  "/seller/pro/[slug]/list": [
+    "static/chunks/276binb5kgpp6.js"
+  ],
+  "/short-url/[code]": [
+    "static/chunks/31ddmt82ai9q5.js"
+  ],
+  "/sso-redirect": [
+    "static/chunks/0ya1x_fkiiljj.js"
+  ],
+  "/superapp/[...slug]": [
+    "static/chunks/2kaid828nojg8.js"
+  ],
+  "/superapp/digicoin": [
+    "static/chunks/1z0zdmcvrvhji.js"
+  ],
+  "/superapp/digicoin/transactions": [
+    "static/chunks/3r86q8ylx9uxo.js"
+  ],
+  "/superapp/games/five-second-rush/[gameKey]": [
+    "static/chunks/1-8m4jlkodokq.js"
+  ],
+  "/superapp/games/five-second-rush/[gameKey]/faq": [
+    "static/chunks/3cqs70u8s1o0q.js"
+  ],
+  "/superapp/games/five-second-rush/[gameKey]/prizes": [
+    "static/chunks/27w6sqgugcasc.js"
+  ],
+  "/superapp/games/lucky-wheel/[gameKey]": [
+    "static/chunks/3-rkwiajy20x4.js"
+  ],
+  "/superapp/games/lucky-wheel/[gameKey]/faq": [
+    "static/chunks/2n7uwl0981os9.js"
+  ],
+  "/superapp/games/lucky-wheel/[gameKey]/prizes": [
+    "static/chunks/3ith0rz14m72t.js"
+  ],
+  "/superapp/units": [
+    "static/chunks/1s453bh6t3lgv.js"
+  ],
+  "/support": [
+    "static/chunks/33smn6-fuobef.js"
+  ],
+  "/tags": [
+    "static/chunks/0tnuxcir9rabv.js"
+  ],
+  "/tags/[tagCode]": [
+    "static/chunks/34qnbklw_mlye.js"
+  ],
+  "/tima-card": [
+    "static/chunks/35i9mtcp124px.js"
+  ],
+  "/tima-card/result/[orderUuid]": [
+    "static/chunks/2774wcps8a7li.js"
+  ],
+  "/transaction/rate": [
+    "static/chunks/3x9sjti14ftf_.js"
+  ],
+  "/treasure-hunt": [
+    "static/chunks/1kylnkcr6i8lf.js"
+  ],
+  "/try-on/makeup/[productId]": [
+    "static/chunks/3142coa5fzax7.js"
+  ],
+  "/try-on/style/[productId]": [
+    "static/chunks/2nnbk8gt-bh7c.js"
+  ],
+  "/users/enter-phone": [
+    "static/chunks/3t11u21-hxocs.js"
+  ],
+  "/users/login": [
+    "static/chunks/2yh1-8aynv_8c.js"
+  ],
+  "/users/logout": [
+    "static/chunks/2zeh5q9lxa3nj.js"
+  ],
+  "/users/password/forgot": [
+    "static/chunks/0ipcrz-suidsx.js"
+  ],
+  "/users/password/reset": [
+    "static/chunks/3kx8zgpso2qx0.js"
+  ],
+  "/users/welcome": [
+    "static/chunks/1tlgk9lnkffv5.js"
+  ],
+  "/web-redirect": [
+    "static/chunks/0fd8g0_tz_p4h.js"
+  ],
+  "/wishlist/[wishListCode]": [
+    "static/chunks/18_x1spqai_wd.js"
+  ],
+  "__rewrites": {
+    "afterFiles": [
+      {
+        "source": "/cart",
+        "destination": "/checkout/cart/"
+      },
+      {
+        "source": "/shipping",
+        "destination": "/checkout/shipping/"
+      },
+      {
+        "source": "/org-exclusive/checkout/shipping",
+        "destination": "/checkout/shipping/"
+      },
+      {
+        "source": "/payment",
+        "destination": "/checkout/payment/"
+      },
+      {
+        "source": "/org-exclusive/checkout/payment",
+        "destination": "/checkout/payment/"
+      },
+      {
+        "source": "/profile/my-orders",
+        "destination": "/profile/orders/"
+      },
+      {
+        "source": "/profile/my-orders/:id",
+        "destination": "/profile/orders/:id/"
+      },
+      {
+        "source": "/profile/orders-return/:id",
+        "destination": "/profile/orders/return/:id/"
+      },
+      {
+        "source": "/users/login-register",
+        "destination": "/users/login/"
+      },
+      {
+        "source": "/users/register",
+        "destination": "/users/login/"
+      },
+      {
+        "source": "/plus/new-landing",
+        "destination": "/plus/landing/"
+      },
+      {
+        "source": "/magnet/lives/:path*",
+        "destination": "/magnet/live/:path*"
+      },
+      {
+        "source": "/profile/nps/:path*",
+        "destination": "/nps/:path*"
+      },
+      {
+        "source": "/profile/transaction/rate/:path*",
+        "destination": "/transaction/rate/:path*"
+      },
+      {
+        "source": "/mehr-login",
+        "destination": "/users/login"
+      }
+    ],
+    "beforeFiles": [],
+    "fallback": []
+  },
+  "sortedPages": [
+    "/",
+    "/404",
+    "/500",
+    "/_app",
+    "/_error",
+    "/all-brands",
+    "/all-categories",
+    "/assistant",
+    "/best-selling",
+    "/brand/[brandCode]",
+    "/brand-landing/[brandCode]",
+    "/categories",
+    "/chat-room",
+    "/checkout/add-item",
+    "/checkout/cart",
+    "/checkout/instant/[[...data]]",
+    "/checkout/payment/[[...data]]",
+    "/checkout/shipping",
+    "/checkout/thank-you/[type]/[...data]",
+    "/cheque/[[...slug]]",
+    "/compare/[...productIds]",
+    "/coupon/[[...slug]]",
+    "/digiclub",
+    "/digiclub/auction",
+    "/digiclub/authorize",
+    "/digiclub/game-center/digipoly",
+    "/digiclub/game-center/seedling-hope",
+    "/digiclub/gamenet",
+    "/digiclub/history",
+    "/digiclub/history/claimed",
+    "/digiclub/history/expired",
+    "/digiclub/history/pending",
+    "/digiclub/history/ready-to-claim",
+    "/digiclub/history/used",
+    "/digiclub/lucky-spinner",
+    "/digiclub/luckydraw",
+    "/digiclub/missions",
+    "/digiclub/redirect/[...redirectId]",
+    "/digiclub/rewards",
+    "/digiclub/vote-to-win/[id]",
+    "/duck",
+    "/early-access-fresh",
+    "/early-access-offers",
+    "/emergency-test",
+    "/faq",
+    "/faq/category/[categoryId]",
+    "/faq/question/[questionId]",
+    "/foryou/games/5secondsrush",
+    "/fresh-offers",
+    "/grid-picture/[imageId]",
+    "/hot-discount",
+    "/incredible-offers",
+    "/incredible-offers-teasing",
+    "/landing/ad-amazing",
+    "/landing/amazing-election",
+    "/landing/back-to-school-1401",
+    "/landing/black-friday-1401",
+    "/landing/book-fair-1401",
+    "/landing/book-fair-1402",
+    "/landing/corporate-gift-cards",
+    "/landing/henkel",
+    "/landing/khanetekani",
+    "/landing/new-year-1402",
+    "/landing/sellers-promotion",
+    "/landing/stock-clearance",
+    "/landing/treasure-hunt",
+    "/landing/un",
+    "/landing/voucher-catcher/[id]",
+    "/landing/worldcup-2022",
+    "/landing/x-vision",
+    "/landing/[id]",
+    "/landing-page",
+    "/landing-v2/[id]",
+    "/landings/business-registration",
+    "/landings/father-day",
+    "/landings/magnet",
+    "/landings/mahekamel",
+    "/landings/new-app",
+    "/landings/seller-introduction",
+    "/landings/unsatisfied/[id]",
+    "/landings/user-history",
+    "/landings/village-businesses",
+    "/live",
+    "/magnet/activation",
+    "/magnet/community/c/[communityId]",
+    "/magnet/community/c/[communityId]/search",
+    "/magnet/community/create-question",
+    "/magnet/community/question/[questionId]",
+    "/magnet/community/search",
+    "/magnet/feed",
+    "/magnet/following-followers/[username]",
+    "/magnet/live/[liveId]",
+    "/magnet/posts/[postId]",
+    "/magnet/profile",
+    "/magnet/profile/edit",
+    "/magnet/tab",
+    "/magnet/users/[username]",
+    "/magnet-profile/seller-verification",
+    "/main/dk-ds-gift-card",
+    "/main/[categoryCode]",
+    "/my-digipay",
+    "/nps",
+    "/nps/[...data]",
+    "/org-exclusive",
+    "/org-exclusive/checkout/cart",
+    "/org-exclusive/checkout/payment/[[...data]]",
+    "/org-exclusive/checkout/shipping",
+    "/org-exclusive/checkout/thank-you/[type]/[...data]",
+    "/org-exclusive/product/[...productParams]",
+    "/org-exclusive/product-list/[plpCode]",
+    "/org-exclusive/search",
+    "/org-exclusive/search/[categoryCode]",
+    "/page/bug-report",
+    "/page/comments-rules",
+    "/page/contact-us",
+    "/page/irancell-terms-and-conditions",
+    "/page/privacy",
+    "/page/terms",
+    "/personalized-category/[categoryType]",
+    "/plus/landing",
+    "/plus/landing/faqs",
+    "/plus/products",
+    "/premium-brand/[brandCode]",
+    "/premium-brand/[brandCode]/[categoryCode]",
+    "/product/comment/[...commentParams]",
+    "/product/questions/[productId]",
+    "/product/[...productParams]",
+    "/product-list/[plpCode]",
+    "/product-price-chart/[productId]",
+    "/profile",
+    "/profile/addresses",
+    "/profile/chat-bot",
+    "/profile/comments",
+    "/profile/complete-information",
+    "/profile/digiplus",
+    "/profile/digiplus/orders",
+    "/profile/digiplus/subscriptions",
+    "/profile/gift-cards",
+    "/profile/gift-cards/[id]",
+    "/profile/giftcard-not-found",
+    "/profile/lists",
+    "/profile/merge",
+    "/profile/notification",
+    "/profile/orders",
+    "/profile/orders/cancel/online-modification/[...onlineModificationId]",
+    "/profile/orders/cancel/thank-you/[...onlineModificationId]",
+    "/profile/orders/cancel/[...shipmentId]",
+    "/profile/orders/invoice/[type]/[...data]",
+    "/profile/orders/modify-shipment/[...orderId]",
+    "/profile/orders/refunds",
+    "/profile/orders/return/overview/[returnId]",
+    "/profile/orders/return/reasons/[returnId]",
+    "/profile/orders/return/select-items/[orderId]",
+    "/profile/orders/return/thank-you/[returnId]",
+    "/profile/orders/return/[id]",
+    "/profile/orders/[id]",
+    "/profile/personal-info",
+    "/profile/phone/confirm",
+    "/profile/user-history",
+    "/profile/wishlist/[wishListCode]/details",
+    "/promotion-center",
+    "/promotion-page/[promotionCode]",
+    "/promotion-search/personalized",
+    "/referral",
+    "/routing",
+    "/s/[code]",
+    "/search",
+    "/search/ai",
+    "/search/facet/[...facetURL]",
+    "/search/image-search",
+    "/search/[categoryCode]",
+    "/search/[categoryCode]/product-list",
+    "/search/[categoryCode]/[brandCode]",
+    "/seller/pro/[slug]",
+    "/seller/pro/[slug]/list",
+    "/seller/[sellerCode]",
+    "/short-url/[code]",
+    "/sso-redirect",
+    "/superapp/digicoin",
+    "/superapp/digicoin/transactions",
+    "/superapp/games/five-second-rush/[gameKey]",
+    "/superapp/games/five-second-rush/[gameKey]/faq",
+    "/superapp/games/five-second-rush/[gameKey]/prizes",
+    "/superapp/games/lucky-wheel/[gameKey]",
+    "/superapp/games/lucky-wheel/[gameKey]/faq",
+    "/superapp/games/lucky-wheel/[gameKey]/prizes",
+    "/superapp/units",
+    "/superapp/[...slug]",
+    "/support",
+    "/tags",
+    "/tags/[tagCode]",
+    "/tima-card",
+    "/tima-card/result/[orderUuid]",
+    "/transaction/rate",
+    "/treasure-hunt",
+    "/try-on/makeup/[productId]",
+    "/try-on/style/[productId]",
+    "/users/enter-phone",
+    "/users/login",
+    "/users/logout",
+    "/users/password/forgot",
+    "/users/password/reset",
+    "/users/welcome",
+    "/web-redirect",
+    "/wishlist/[wishListCode]",
+    "/[brandCode]/[categoryCode]"
+  ]
+};self.__BUILD_MANIFEST_CB && self.__BUILD_MANIFEST_CB()

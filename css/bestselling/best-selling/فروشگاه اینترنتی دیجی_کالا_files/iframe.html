@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)https://cdn-iframe.digiwiseid.com/iframe.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <script>
+      const day = 24 * 60
+      const cookieTtl = 365 * day
+      const localStorageTtlDays = 1000
+
+      let cookieName = '__smid'
+      let backendUrl = 'https://api-dwid.digiwiseid.com'
+      let parentHostname = null
+      let parentOrigin = null
+      let sdkVersion = '1.2.6'
+      let requestInProgress = false
+      let dwidResolved = false
+      let parentSmid = null
+
+      function syncCookieNameFromBackendUrl(url) {
+        if (/api-dwid\.alpha\.digiwiseid\.com|api-dwid\.dev\.digiwiseid\.com/i.test(url)) {
+          cookieName = '__alpha_smid'
+        } else if (/api-dwid\.digiwiseid\.com/i.test(url)) {
+          cookieName = '__smid'
+        }
+      }
+
+      function generateUuidV7() {
+        const ts = Date.now()
+        const rnd = new Uint8Array(10)
+        crypto.getRandomValues(rnd)
+
+        // 48-bit timestamp: high bytes need float division because JS
+        // bitwise ops coerce to 32 bits and would truncate Date.now().
+        const uuid = new Uint8Array(16)
+        uuid[0] = Math.floor(ts / Math.pow(2, 40)) & 0xff
+        uuid[1] = Math.floor(ts / Math.pow(2, 32)) & 0xff
+        uuid[2] = Math.floor(ts / Math.pow(2, 24)) & 0xff
+        uuid[3] = Math.floor(ts / Math.pow(2, 16)) & 0xff
+        uuid[4] = Math.floor(ts / Math.pow(2, 8)) & 0xff
+        uuid[5] = ts & 0xff
+        uuid[6] = 0x70 | (rnd[0] & 0x0f)
+        uuid[7] = rnd[1]
+        uuid[8] = 0x80 | (rnd[2] & 0x3f)
+        for (let i = 9; i < 16; i++) {
+          uuid[i] = rnd[i - 6]
+        }
+
+        const hex = Array.from(uuid, function (b) {
+          return b.toString(16).padStart(2, '0')
+        }).join('')
+
+        return (
+          hex.slice(0, 8) +
+          '-' +
+          hex.slice(8, 12) +
+          '-' +
+          hex.slice(12, 16) +
+          '-' +
+          hex.slice(16, 20) +
+          '-' +
+          hex.slice(20)
+        )
+      }
+
+      function getCookieDomainAttribute() {
+        if (/\.digiwiseid\.com$/i.test(window.location.hostname)) {
+          return '; domain=.digiwiseid.com'
+        }
+        return ''
+      }
+
+      function setCookie(key, value, ttlMinutes) {
+        const expires = new Date(
+          Date.now() + ttlMinutes * 60 * 1000,
+        ).toUTCString()
+
+        document.cookie =
+          key +
+          '=' +
+          value +
+          '; expires=' +
+          expires +
+          '; path=/' +
+          getCookieDomainAttribute() +
+          '; SameSite=None; Secure'
+      }
+
+      function getCookie(key) {
+        const cookies = document.cookie ? document.cookie.split('; ') : []
+
+        for (let i = 0; i < cookies.length; i++) {
+          const parts = cookies[i].split('=')
+          const k = parts[0]
+          const v = parts.slice(1).join('=')
+          if (k === key) return v
+        }
+        return null
+      }
+
+      function readLocalStorageEntry(key) {
+        const raw = localStorage.getItem(key)
+        if (!raw) return null
+
+        try {
+          const parsed = JSON.parse(raw)
+          if (Date.now() > parsed.expires) {
+            localStorage.removeItem(key)
+            return null
+          }
+          return parsed
+        } catch (e) {
+          return null
+        }
+      }
+
+      function setLocalStorage(key, value, synced) {
+        const ttlMs = localStorageTtlDays * day * 60 * 1000
+        const data = {
+          value: value,
+          expires: Date.now() + ttlMs,
+          synced: synced === true,
+        }
+        localStorage.setItem(key, JSON.stringify(data))
+      }
+
+      function getLocalStorage(key) {
+        const entry = readLocalStorageEntry(key)
+        return entry ? entry.value : null
+      }
+
+      function isLocalStorageSynced(key) {
+        const entry = readLocalStorageEntry(key)
+        return !!(entry && entry.synced)
+      }
+
+      function markLocalStorageSynced(key) {
+        const entry = readLocalStorageEntry(key)
+        if (!entry) return
+        entry.synced = true
+        localStorage.setItem(key, JSON.stringify(entry))
+      }
+
+      function sendDwidToFirstParty(smid) {
+        if (dwidResolved) return
+        dwidResolved = true
+        window.parent.postMessage(
+          { type: 'DWID_RECEIVED', smid: smid },
+          parentOrigin || '*',
+        )
+      }
+
+      function waitForDwid(maxMs) {
+        return new Promise(function (resolve) {
+          const start = Date.now()
+          function tick() {
+            const hasCookie = !!getCookie(cookieName)
+            const hasLs = !!getLocalStorage(cookieName)
+            if (hasCookie || hasLs || Date.now() - start > maxMs) {
+              resolve()
+            } else {
+              setTimeout(tick, 50)
+            }
+          }
+          tick()
+        })
+      }
+
+      async function storeDwid(smid) {
+        try {
+          const response = await fetch(backendUrl + '/api/v1/smid?source=iframe', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              // 'Smid-Origin': parentHostname || 'unknown',
+            },
+            body: JSON.stringify({
+              smid: smid,
+            }),
+          })
+          if (response.ok) {
+            markLocalStorageSynced(cookieName)
+          }
+        } catch (error) {}
+      }
+
+      async function ensureStored(dwid) {
+        if (!isLocalStorageSynced(cookieName)) {
+          await storeDwid(dwid)
+        }
+      }
+
+      async function resolveDwidFromStorage() {
+        let dwid = getCookie(cookieName)
+        if (dwid) return dwid
+
+        const lsDwid = getLocalStorage(cookieName)
+        if (lsDwid) {
+          setCookie(cookieName, lsDwid, cookieTtl)
+          await ensureStored(lsDwid)
+          return lsDwid
+        }
+
+        return null
+      }
+
+      async function handleInitRequest() {
+        if (dwidResolved) return
+
+        const existingDwid = getCookie(cookieName)
+        if (existingDwid) {
+          sendDwidToFirstParty(existingDwid)
+          return
+        }
+
+        if (parentSmid) {
+          setLocalStorage(cookieName, parentSmid, false)
+          setCookie(cookieName, parentSmid, cookieTtl)
+          await ensureStored(parentSmid)
+          sendDwidToFirstParty(parentSmid)
+          return
+        }
+
+        const lsDwid = getLocalStorage(cookieName)
+        if (lsDwid) {
+          setCookie(cookieName, lsDwid, cookieTtl)
+          await ensureStored(lsDwid)
+          sendDwidToFirstParty(lsDwid)
+          return
+        }
+
+        if (requestInProgress) {
+          await waitForDwid(5000)
+          const dwid = await resolveDwidFromStorage()
+          if (dwid) {
+            sendDwidToFirstParty(dwid)
+          }
+          return
+        }
+
+        requestInProgress = true
+        try {
+          const newDwid = generateUuidV7()
+          setLocalStorage(cookieName, newDwid, false)
+          setCookie(cookieName, newDwid, cookieTtl)
+          await storeDwid(newDwid)
+          sendDwidToFirstParty(newDwid)
+        } finally {
+          requestInProgress = false
+        }
+      }
+
+      window.addEventListener('message', function (event) {
+        if (!event.data || !event.data.type) return
+
+        if (event.data.type === 'SET_PARENT_HOST' && event.data.hostname) {
+          parentHostname = event.data.hostname
+          if (event.origin) {
+            parentOrigin = event.origin
+          }
+          return
+        }
+
+        if (event.data.type === 'SET_COOKIE_NAME' && event.data.cookieName) {
+          cookieName = event.data.cookieName
+          return
+        }
+
+        if (event.data.type === 'SET_BACKEND_URL' && event.data.backendUrl) {
+          backendUrl = event.data.backendUrl
+          syncCookieNameFromBackendUrl(backendUrl)
+          return
+        }
+
+        if (event.data.type === 'SET_SDK_VERSION' && event.data.sdkVersion) {
+          sdkVersion = event.data.sdkVersion
+          return
+        }
+
+        if (event.data.type === 'SET_SMID' && event.data.smid) {
+          parentSmid = event.data.smid
+          return
+        }
+
+        if (event.data.type === 'INIT_DWID_REQUEST') {
+          handleInitRequest()
+        }
+      })
+    </script>
+  
+
+</body></html>

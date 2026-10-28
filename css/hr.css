@@ -1,0 +1,6 @@
+.hr {
+    border: none;
+    height: 0.5px;
+    background-color: rgb(129, 133, 139);
+    width: 100%;
+}

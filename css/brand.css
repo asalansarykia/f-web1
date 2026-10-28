@@ -1,0 +1,97 @@
+.brand {
+    width: 100%;
+    height: 228px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: ;
+    background-color: ;
+
+    .brand-center {
+        border: 1px solid #DEDFE0;
+        max-width: 1300px;
+        width: 100%;
+        height: 100%;
+        border-radius: 16px;
+        padding: 0 0 24px;
+        box-sizing: border-box;
+
+        .brand-center-top {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: row;
+            padding: 16px 24px 0;
+
+            img {
+                width: 24px;
+                height: 24px;
+                object-fit: contain;
+                flex-shrink: 0;
+            }
+
+            h1 {
+                font-family: var(--font-m);
+                padding: 0;
+                margin: 0 24px 0 0;
+                font-size: 20px;
+                color: #1f1f1f;
+            }
+        }
+
+        
+        .brand-center-bottom {
+          width: calc(100% - 24px);
+          height: auto;
+          padding-top: 30px;
+          margin: 0 12px;
+          position: relative;
+          box-sizing: border-box;
+          .swiper {
+            width: 100%;
+            height: 124px;
+            overflow: hidden;
+            
+
+            .swiper-wrapper {
+
+              .swiper-slide {
+                border: 1px solid #DEDFE0;
+                border-radius: 8px;
+                width: 90px;
+                height: 124px;
+                text-align: center;
+                font-size: 18px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                box-sizing: border-box;
+                width: 90px;
+                justify-content: flex-start;
+                box-sizing: border-box;
+                text-align: center;
+                flex-direction: column;
+                img {
+                  width: 78px;
+                  height: 78px;
+                  object-fit: contain;
+                  padding: 6px;
+                }
+
+                p {
+                  margin: 5px 0 0;
+                  font-size: 12px;
+                  text-align: center;
+                  font-family: var(--font-m);
+                }
+              }
+            }
+
+            .swiper-button-next,
+            .swiper-button-prev {
+              color: #333;
+            }
+          }
+        }
+            }
+ }

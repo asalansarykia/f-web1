@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Variable;
+    src: url(../fonts/fa/digikala-variable.16j_2qc1xkb87.woff2);
+} 
+@font-face {
+  font-family: IranYekan;
+  src: url(../fonts/fa/iranyekanwebregular.woff);
+}
+@font-face {
+  font-family: Yekan;
+  src: url(../fonts/fa/Yekan.ttf);
+}
+.wrapper {
+  width: 100%;
+}
+:root {
+  --font-family: IranYekan;
+  --font-number: Yekan;
+  --font-m: Variable
+}
+body {
+  min-height: 3000px;
+}
+.swiper-button-next,
+.swiper-button-next,
+.swiper-button-prev,
+.swiper-button-prev {
+  width: 40px;
+  height: 40px;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  svg {
+    width: 20px;
+    height: 20px;
+    path {
+      fill: black;
+    }
+  }
+}
+.swiper-pagination-bullet-active{
+  width: 20px;
+  background-color: black;
+  border-radius: 5px;
+  transition: 325ms;
+}
