@@ -1,0 +1,61 @@
+.slider-one {
+    width: 1535px;
+    height: 325px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    .h {
+        height: 33px;
+        padding: 0 48px;
+
+        h1 {
+            direction: rtl;
+            font-size: 22px;
+            font-weight: 700;
+            color: rgb(31, 31, 31);
+            font-family: var(--font-family);
+        }
+    }
+
+    .swiper {
+    width: 100%;
+    height: 325px;
+    position: relative;
+    overflow: hidden;
+
+    .images {
+        width: 1535px;
+        height: 325px;
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 330px;
+        gap: 8px;
+
+        width: max-content;
+        direction: rtl;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        animation: brandMove 15s linear infinite;
+
+        img {
+            width: 244px;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+@keyframes brandMove {
+    from {
+        transform: translateX(-2700);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}

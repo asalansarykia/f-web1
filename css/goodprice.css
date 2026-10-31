@@ -1,0 +1,201 @@
+.good-price{
+    width: 1535px;
+    height: 512px;
+    background-color: #800000;
+    margin: 0 0 40px;
+    padding: 16px 48px 24px 0;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    column-gap: 16px;
+    margin-top: 30px;
+
+    .text{
+        width: 100%;
+        height: 48px;
+        position: relative;
+        align-items: center;
+        box-sizing: border-box;
+        display: flex;
+        row-gap: 32px;
+        justify-content: space-between;
+        padding: 8px 48px 0;
+
+        .span-text{
+        font-size: 22px;
+        box-sizing: border-box;
+        line-height: 33px;
+        direction: rtl;
+        font-family: var(--font-family);
+        font-weight: 700;
+        color: rgb(255, 255, 255);
+}
+
+        .see-all{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+
+            p{
+                box-sizing: border-box;
+                direction: rtl;
+                 margin: 0;
+                font-size: 14px;
+                line-height: 33px;
+                font-family: var(--font-family);
+                font-weight: 700;
+                color: rgb(255, 255, 255);
+            }
+
+            .icon{
+               border-radius: 9999px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: aliceblue;
+            img{
+                width: 20px;
+                height: 20px;
+                display: block;
+
+            }
+            }
+        }
+
+    }
+
+    .mywonderfull {
+    width:100%;
+    height: 407px;
+    overflow: hidden;
+    position: relative;
+        
+    .swiper-wrapper {
+        align-items: stretch;
+    }
+
+    .swiper-slide {
+    height: 407px;
+    width: 212px;
+    box-sizing: border-box;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    .swiper-slide-item {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+        background-color: white;
+        img {
+            display: block;
+            width: 212px;
+            height: 282px;
+            object-fit: contain;
+            box-sizing: border-box;
+        }
+
+        .text-details{
+            width: 200px;
+            height: 125px;
+            padding: 12px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            .p-one{
+                width: 188px;
+                height: 21px;
+                display: block;
+                box-sizing: border-box;
+                direction: rtl;
+                font-size: 14px;
+                font-weight: 500;
+                text-align: right;
+                color: rgb(31, 31, 31);
+                font-family: var(--font-family);
+            }
+            .p-two{
+                width: 188px;
+                height: 18px;
+                font-family: var(--font-family);
+                font-size: 12px;
+                color: rgb(84, 84, 84); 
+                text-overflow: ellipsis;   
+                text-align: right;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+            .price{
+             width: 100%;   
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+               
+                 .discount{
+                    width: 120px;
+                    height: 20px;
+                    direction: ltr;
+                    display: flex;
+            flex-flow: row;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 6px;
+                     
+                    .percentage{
+                        background-color: rgb(148, 0, 0);
+                        width: 30px;
+                        height: 20px;
+                        padding: 0 4px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        
+                        span{
+                        font-family: var(--font-family);
+                        color: rgb(255, 255, 255);
+                        font-size: 10px;
+                        line-height: 15px;
+                        
+                        }
+                        
+                        
+                    }
+
+                    .old-price{
+                        color: rgb(162, 162, 162);
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 24px;
+                        text-decoration: line-through;
+                        tab-size: 4;
+                        font-family: var(--font-family);
+                    }
+                 }
+
+                .real-price{
+                    width: 80px;
+                    height: 29px;
+                    span{
+                        font-size: 18px;
+                        font-weight: 700;
+                        font-family: var(--font-family);
+                        display: block;
+                        line-height: 27px;
+                    }
+
+                }
+               }
+            }
+        }
+    }
+}
+
+}
