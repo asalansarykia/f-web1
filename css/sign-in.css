@@ -1,0 +1,129 @@
+@font-face {
+    font-family: IRANYekan;
+    src: url("../fonts/fa/iranyekanwebregular.woff") format("woff2");
+    font-weight: 100 900;
+}
+:root {
+    --font-family: IRANYekan, sans-serif;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-box {
+    width: 390px;
+    height: 400px;
+    padding: 32px;
+    
+    border: 0.8px solid rgb(208, 207, 207);
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    .main-header{
+        width: 334px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    column-gap: 75px;
+        .image-header-one{
+            img{
+                width: 24px;
+                height: 24px;
+            }
+        }
+        .image-header-two{
+            img{ width: 162px;
+            height: 25px;}
+        }
+
+
+
+    }
+    .main-one{
+        box-sizing: border-box;
+        margin-bottom: 16px;
+        margin-top: 60px;
+        h1{
+            font-family: var(--font-family);
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+        }
+
+    }
+    .main-two{
+        margin-top: 15px;
+        margin: 5px;
+        margin-bottom: 16px;
+        h2{ font-size: 12px;
+        height: auto;
+    font-weight: 700;
+    color: rgb(129, 133, 139);
+            font-family: var(--font-family);
+}
+    }
+
+    .main-three {
+    width: 100%;
+    height: 48px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-sizing: border-box;
+    border: 0.8px solid rgb(208, 207, 207);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+
+    p {
+        text-align: start;
+        font-size: 15px;
+        font-weight: 400;
+        padding: 0 12px;
+        font-family: var(--font-family);
+        color: rgb(208, 207, 207);
+    }
+}
+.main-four{
+    width: 100%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: #EF4056;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    p{
+        word-spacing: 0px;
+        line-height: 31px;
+        font-size: 14px;
+        font-weight: 500px;
+        font-stretch: 100%;
+        font-family: var(--font-family);
+        font-kerning: auto;
+        color: white;
+        text-decoration: none;
+    }
+}
+.main-five{
+    p{
+        font-family: var(--font-family);
+        font-size: 12px;
+        font-weight: 350;
+        visibility: visible;
+        color: rgb(129, 133, 139);
+        margin-top: 16px;
+        white-space: nowrap;
+        margin-right: 15px;
+    }
+}
+}

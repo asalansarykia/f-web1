@@ -38,3 +38,20 @@
       }
         }
       }
+
+      .collection .mycollection .swiper-button-next,
+.collection .mycollection .swiper-button-prev {
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 50%;
+}
+
+.collection .mycollection .swiper-button-next::after,
+.collection .mycollection .swiper-button-prev::after {
+    font-size: 218px !important;
+}
+/* مخفی شدن Prev در ابتدای اسلایدر و Next در انتهای اسلایدر */
+.collection .mycollection .swiper-button-prev.swiper-button-disabled,
+.collection .mycollection .swiper-button-next.swiper-button-disabled {
+    display: none !important;
+}

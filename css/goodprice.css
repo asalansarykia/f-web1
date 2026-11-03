@@ -56,12 +56,12 @@
             justify-content: center;
             width: 40px;
             height: 40px;
-            background-color: aliceblue;
+            background-color:#FFFFFF;
             img{
                 width: 20px;
                 height: 20px;
                 display: block;
-
+                margin-right: 8px;
             }
             }
         }
@@ -183,6 +183,7 @@
                 .real-price{
                     width: 80px;
                     height: 29px;
+                    padding-top: 15px;
                     span{
                         font-size: 18px;
                         font-weight: 700;
@@ -195,7 +196,62 @@
                }
             }
         }
+        .total {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: -5px;
+        background-image: url("../images/New%20folder/goodprice/tar.jpg");
+        filter: blur(5px);
+        z-index: 0;
+    }
+
+    .see {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        row-gap: 5px;
+
+
+        p {
+            font-family: var(--font-family);
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        img {
+            width: 20px;
+            height: 20px;
+        }}
     }
 }
 
+}
+}
+
+.good-price .mywonderfull .swiper-button-next,
+.good-price .mywonderfull .swiper-button-prev {
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 50%;
+}
+
+.good-price .mywonderful .swiper-button-next::after,
+.collection .mywonderful .swiper-button-prev::after {
+    font-size: 218px !important;
+}
+/* مخفی شدن Prev در ابتدای اسلایدر و Next در انتهای اسلایدر */
+.good-price .mywonderfuln .swiper-button-prev.swiper-button-disabled,
+.good-price .mywonderful .swiper-button-next.swiper-button-disabled {
+    display: none !important;
 }

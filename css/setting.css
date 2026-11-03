@@ -26,6 +26,7 @@
 }
 body {
   min-height: 3000px;
+  overflow-x: hidden;
 }
 .swiper-button-next,
 .swiper-button-next,
